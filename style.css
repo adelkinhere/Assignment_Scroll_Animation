@@ -1,0 +1,104 @@
+body {
+    font-family: 'Klee One';
+    background-color: #FFF8E1;
+    color: #663300;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  header {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #FFC107;
+    margin-bottom: 50px;
+  }
+
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+
+  .team-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    min-height: 100vh;
+  }
+
+  .team-title {
+    text-align: center;
+    margin-bottom: 100px;
+  }
+
+  .team-title h2 {
+    font-size: 40px;
+  }
+
+  .team-title p {
+    font-size: 25px;
+  }
+
+  .team-members {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    position: relative;
+    height: 300px;
+  }
+
+  .team-member {
+    width: 280px;
+    text-align: center;
+    position: relative;
+  }
+
+  .team-member-info {
+    opacity: 0;
+    transition: opacity 1.5s ease;
+  }
+
+  .team-member-info.visible {
+    opacity: 1;
+  }
+
+  .team-member img.profile {
+    width: 100%;
+    height: 360;
+    object-fit: cover;
+    opacity: 0; /* initially hidden */
+    transition: opacity 1.5s ease;
+  }
+  
+  .team-member img.profile.visible {
+    opacity: 1 !important; /* forcing visibility */
+  }
+  
+  .team-member h3 {
+    margin-top: 15px;
+    font-size: 25px;
+  }
+
+  .team-member p {
+    font-size: 20px;
+  }
+
+  .flying-bee {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    z-index: 10;
+    transform-origin: center center;
+  }
+  
+  .bee-svg {
+    width: 100%;
+    height: 100%;
+  }
